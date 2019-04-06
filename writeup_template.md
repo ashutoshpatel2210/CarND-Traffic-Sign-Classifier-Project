@@ -168,7 +168,7 @@ My final model consisted of the following layers:
 | RELU					|												|
 | Fully connected		| Input = 84. Output = 43.        		        |
 | Softmax				|         									    |
-|
+
  
 ```python
 ### Define your architecture here.
@@ -284,8 +284,8 @@ training_operation = optimizer.minimize(loss_operation)
 
 My final model results were:
 * training set accuracy of 0.998
-* validation set accuracy of 0.959
-* test set accuracy of 0.933
+* validation set accuracy of 0.964
+* test set accuracy of 0.938
 
 Used iterative approach:
 
@@ -348,407 +348,409 @@ with tf.Session() as sess:
     print("Model saved")
 ```
 
- Training...
+Training...
     
     EPOCH 1 ...
-    Train Accuracy = 0.339
-    Validation Accuracy = 0.299
+    Train Accuracy = 0.340
+    Validation Accuracy = 0.296
     
     EPOCH 2 ...
-    Train Accuracy = 0.539
-    Validation Accuracy = 0.489
+    Train Accuracy = 0.535
+    Validation Accuracy = 0.509
     
     EPOCH 3 ...
-    Train Accuracy = 0.657
-    Validation Accuracy = 0.627
+    Train Accuracy = 0.649
+    Validation Accuracy = 0.620
     
     EPOCH 4 ...
-    Train Accuracy = 0.729
-    Validation Accuracy = 0.696
+    Train Accuracy = 0.730
+    Validation Accuracy = 0.703
     
     EPOCH 5 ...
-    Train Accuracy = 0.781
-    Validation Accuracy = 0.739
+    Train Accuracy = 0.778
+    Validation Accuracy = 0.754
     
     EPOCH 6 ...
-    Train Accuracy = 0.815
-    Validation Accuracy = 0.773
+    Train Accuracy = 0.810
+    Validation Accuracy = 0.778
     
     EPOCH 7 ...
     Train Accuracy = 0.840
-    Validation Accuracy = 0.795
+    Validation Accuracy = 0.804
     
     EPOCH 8 ...
-    Train Accuracy = 0.859
+    Train Accuracy = 0.857
     Validation Accuracy = 0.821
     
     EPOCH 9 ...
-    Train Accuracy = 0.878
-    Validation Accuracy = 0.834
+    Train Accuracy = 0.874
+    Validation Accuracy = 0.844
     
     EPOCH 10 ...
-    Train Accuracy = 0.890
-    Validation Accuracy = 0.843
+    Train Accuracy = 0.891
+    Validation Accuracy = 0.849
     
     EPOCH 11 ...
-    Train Accuracy = 0.904
-    Validation Accuracy = 0.856
+    Train Accuracy = 0.900
+    Validation Accuracy = 0.863
     
     EPOCH 12 ...
     Train Accuracy = 0.910
-    Validation Accuracy = 0.865
+    Validation Accuracy = 0.863
     
     EPOCH 13 ...
-    Train Accuracy = 0.918
-    Validation Accuracy = 0.873
+    Train Accuracy = 0.921
+    Validation Accuracy = 0.878
     
     EPOCH 14 ...
-    Train Accuracy = 0.925
-    Validation Accuracy = 0.878
+    Train Accuracy = 0.927
+    Validation Accuracy = 0.892
     
     EPOCH 15 ...
     Train Accuracy = 0.932
-    Validation Accuracy = 0.887
+    Validation Accuracy = 0.883
     
     EPOCH 16 ...
-    Train Accuracy = 0.936
-    Validation Accuracy = 0.887
+    Train Accuracy = 0.938
+    Validation Accuracy = 0.890
     
     EPOCH 17 ...
-    Train Accuracy = 0.945
-    Validation Accuracy = 0.897
+    Train Accuracy = 0.947
+    Validation Accuracy = 0.904
     
     EPOCH 18 ...
-    Train Accuracy = 0.949
-    Validation Accuracy = 0.900
-    
-    EPOCH 19 ...
-    Train Accuracy = 0.951
+    Train Accuracy = 0.945
     Validation Accuracy = 0.902
     
+    EPOCH 19 ...
+    Train Accuracy = 0.953
+    Validation Accuracy = 0.905
+    
     EPOCH 20 ...
-    Train Accuracy = 0.957
-    Validation Accuracy = 0.905
-    
-    EPOCH 21 ...
-    Train Accuracy = 0.955
-    Validation Accuracy = 0.905
-    
-    EPOCH 22 ...
-    Train Accuracy = 0.963
+    Train Accuracy = 0.950
     Validation Accuracy = 0.910
     
-    EPOCH 23 ...
-    Train Accuracy = 0.960
-    Validation Accuracy = 0.908
+    EPOCH 21 ...
+    Train Accuracy = 0.958
+    Validation Accuracy = 0.912
     
-    EPOCH 24 ...
-    Train Accuracy = 0.964
-    Validation Accuracy = 0.909
-    
-    EPOCH 25 ...
-    Train Accuracy = 0.969
-    Validation Accuracy = 0.921
-    
-    EPOCH 26 ...
-    Train Accuracy = 0.968
+    EPOCH 22 ...
+    Train Accuracy = 0.965
     Validation Accuracy = 0.916
     
+    EPOCH 23 ...
+    Train Accuracy = 0.962
+    Validation Accuracy = 0.915
+    
+    EPOCH 24 ...
+    Train Accuracy = 0.962
+    Validation Accuracy = 0.921
+    
+    EPOCH 25 ...
+    Train Accuracy = 0.968
+    Validation Accuracy = 0.923
+    
+    EPOCH 26 ...
+    Train Accuracy = 0.970
+    Validation Accuracy = 0.927
+    
     EPOCH 27 ...
-    Train Accuracy = 0.969
-    Validation Accuracy = 0.913
+    Train Accuracy = 0.970
+    Validation Accuracy = 0.925
     
     EPOCH 28 ...
-    Train Accuracy = 0.975
-    Validation Accuracy = 0.926
+    Train Accuracy = 0.972
+    Validation Accuracy = 0.932
     
     EPOCH 29 ...
-    Train Accuracy = 0.975
-    Validation Accuracy = 0.925
+    Train Accuracy = 0.973
+    Validation Accuracy = 0.929
     
     EPOCH 30 ...
     Train Accuracy = 0.977
-    Validation Accuracy = 0.921
+    Validation Accuracy = 0.934
     
     EPOCH 31 ...
-    Train Accuracy = 0.978
-    Validation Accuracy = 0.925
+    Train Accuracy = 0.976
+    Validation Accuracy = 0.928
     
     EPOCH 32 ...
-    Train Accuracy = 0.979
-    Validation Accuracy = 0.927
+    Train Accuracy = 0.980
+    Validation Accuracy = 0.931
     
     EPOCH 33 ...
-    Train Accuracy = 0.981
-    Validation Accuracy = 0.927
+    Train Accuracy = 0.982
+    Validation Accuracy = 0.933
     
     EPOCH 34 ...
-    Train Accuracy = 0.983
-    Validation Accuracy = 0.936
+    Train Accuracy = 0.977
+    Validation Accuracy = 0.932
     
     EPOCH 35 ...
-    Train Accuracy = 0.983
-    Validation Accuracy = 0.933
-    
-    EPOCH 36 ...
-    Train Accuracy = 0.984
-    Validation Accuracy = 0.932
-    
-    EPOCH 37 ...
-    Train Accuracy = 0.983
-    Validation Accuracy = 0.933
-    
-    EPOCH 38 ...
-    Train Accuracy = 0.983
+    Train Accuracy = 0.980
     Validation Accuracy = 0.936
     
+    EPOCH 36 ...
+    Train Accuracy = 0.979
+    Validation Accuracy = 0.939
+    
+    EPOCH 37 ...
+    Train Accuracy = 0.981
+    Validation Accuracy = 0.934
+    
+    EPOCH 38 ...
+    Train Accuracy = 0.984
+    Validation Accuracy = 0.940
+    
     EPOCH 39 ...
-    Train Accuracy = 0.985
-    Validation Accuracy = 0.932
+    Train Accuracy = 0.987
+    Validation Accuracy = 0.939
     
     EPOCH 40 ...
     Train Accuracy = 0.986
-    Validation Accuracy = 0.940
+    Validation Accuracy = 0.943
     
     EPOCH 41 ...
-    Train Accuracy = 0.984
-    Validation Accuracy = 0.933
-    
-    EPOCH 42 ...
-    Train Accuracy = 0.988
-    Validation Accuracy = 0.937
-    
-    EPOCH 43 ...
     Train Accuracy = 0.988
     Validation Accuracy = 0.940
     
-    EPOCH 44 ...
+    EPOCH 42 ...
+    Train Accuracy = 0.986
+    Validation Accuracy = 0.942
+    
+    EPOCH 43 ...
     Train Accuracy = 0.987
-    Validation Accuracy = 0.934
-    
-    EPOCH 45 ...
-    Train Accuracy = 0.989
-    Validation Accuracy = 0.939
-    
-    EPOCH 46 ...
-    Train Accuracy = 0.990
-    Validation Accuracy = 0.939
-    
-    EPOCH 47 ...
-    Train Accuracy = 0.990
     Validation Accuracy = 0.936
     
+    EPOCH 44 ...
+    Train Accuracy = 0.988
+    Validation Accuracy = 0.943
+    
+    EPOCH 45 ...
+    Train Accuracy = 0.984
+    Validation Accuracy = 0.937
+    
+    EPOCH 46 ...
+    Train Accuracy = 0.989
+    Validation Accuracy = 0.948
+    
+    EPOCH 47 ...
+    Train Accuracy = 0.992
+    Validation Accuracy = 0.952
+    
     EPOCH 48 ...
-    Train Accuracy = 0.991
-    Validation Accuracy = 0.941
+    Train Accuracy = 0.990
+    Validation Accuracy = 0.943
     
     EPOCH 49 ...
-    Train Accuracy = 0.991
-    Validation Accuracy = 0.943
+    Train Accuracy = 0.992
+    Validation Accuracy = 0.949
     
     EPOCH 50 ...
     Train Accuracy = 0.991
-    Validation Accuracy = 0.939
+    Validation Accuracy = 0.945
     
     EPOCH 51 ...
     Train Accuracy = 0.992
-    Validation Accuracy = 0.938
+    Validation Accuracy = 0.953
     
     EPOCH 52 ...
     Train Accuracy = 0.993
-    Validation Accuracy = 0.946
+    Validation Accuracy = 0.952
     
     EPOCH 53 ...
-    Train Accuracy = 0.991
-    Validation Accuracy = 0.940
+    Train Accuracy = 0.993
+    Validation Accuracy = 0.950
     
     EPOCH 54 ...
-    Train Accuracy = 0.994
-    Validation Accuracy = 0.948
+    Train Accuracy = 0.993
+    Validation Accuracy = 0.950
     
     EPOCH 55 ...
-    Train Accuracy = 0.992
-    Validation Accuracy = 0.943
+    Train Accuracy = 0.994
+    Validation Accuracy = 0.951
     
     EPOCH 56 ...
     Train Accuracy = 0.995
-    Validation Accuracy = 0.951
+    Validation Accuracy = 0.953
     
     EPOCH 57 ...
-    Train Accuracy = 0.994
-    Validation Accuracy = 0.951
+    Train Accuracy = 0.993
+    Validation Accuracy = 0.953
     
     EPOCH 58 ...
     Train Accuracy = 0.995
-    Validation Accuracy = 0.947
+    Validation Accuracy = 0.954
     
     EPOCH 59 ...
     Train Accuracy = 0.994
-    Validation Accuracy = 0.949
+    Validation Accuracy = 0.956
     
     EPOCH 60 ...
     Train Accuracy = 0.994
-    Validation Accuracy = 0.947
+    Validation Accuracy = 0.948
     
     EPOCH 61 ...
     Train Accuracy = 0.994
-    Validation Accuracy = 0.948
+    Validation Accuracy = 0.955
     
     EPOCH 62 ...
-    Train Accuracy = 0.996
-    Validation Accuracy = 0.950
+    Train Accuracy = 0.995
+    Validation Accuracy = 0.955
     
     EPOCH 63 ...
     Train Accuracy = 0.995
-    Validation Accuracy = 0.944
+    Validation Accuracy = 0.952
     
     EPOCH 64 ...
-    Train Accuracy = 0.995
-    Validation Accuracy = 0.946
+    Train Accuracy = 0.994
+    Validation Accuracy = 0.953
     
     EPOCH 65 ...
     Train Accuracy = 0.995
-    Validation Accuracy = 0.946
+    Validation Accuracy = 0.958
     
     EPOCH 66 ...
-    Train Accuracy = 0.994
-    Validation Accuracy = 0.950
+    Train Accuracy = 0.995
+    Validation Accuracy = 0.955
     
     EPOCH 67 ...
-    Train Accuracy = 0.995
-    Validation Accuracy = 0.949
+    Train Accuracy = 0.996
+    Validation Accuracy = 0.955
     
     EPOCH 68 ...
     Train Accuracy = 0.996
-    Validation Accuracy = 0.954
+    Validation Accuracy = 0.957
     
     EPOCH 69 ...
     Train Accuracy = 0.996
-    Validation Accuracy = 0.953
+    Validation Accuracy = 0.956
     
     EPOCH 70 ...
-    Train Accuracy = 0.997
-    Validation Accuracy = 0.955
+    Train Accuracy = 0.995
+    Validation Accuracy = 0.950
     
     EPOCH 71 ...
-    Train Accuracy = 0.997
-    Validation Accuracy = 0.954
+    Train Accuracy = 0.996
+    Validation Accuracy = 0.958
     
     EPOCH 72 ...
-    Train Accuracy = 0.996
-    Validation Accuracy = 0.951
+    Train Accuracy = 0.997
+    Validation Accuracy = 0.959
     
     EPOCH 73 ...
     Train Accuracy = 0.997
-    Validation Accuracy = 0.954
+    Validation Accuracy = 0.958
     
     EPOCH 74 ...
-    Train Accuracy = 0.995
-    Validation Accuracy = 0.951
+    Train Accuracy = 0.997
+    Validation Accuracy = 0.960
     
     EPOCH 75 ...
-    Train Accuracy = 0.997
-    Validation Accuracy = 0.951
+    Train Accuracy = 0.995
+    Validation Accuracy = 0.956
     
     EPOCH 76 ...
-    Train Accuracy = 0.998
-    Validation Accuracy = 0.949
-    
-    EPOCH 77 ...
     Train Accuracy = 0.997
-    Validation Accuracy = 0.952
-    
-    EPOCH 78 ...
-    Train Accuracy = 0.998
     Validation Accuracy = 0.954
     
-    EPOCH 79 ...
+    EPOCH 77 ...
     Train Accuracy = 0.998
-    Validation Accuracy = 0.949
+    Validation Accuracy = 0.959
+    
+    EPOCH 78 ...
+    Train Accuracy = 0.997
+    Validation Accuracy = 0.958
+    
+    EPOCH 79 ...
+    Train Accuracy = 0.997
+    Validation Accuracy = 0.957
     
     EPOCH 80 ...
     Train Accuracy = 0.998
-    Validation Accuracy = 0.957
+    Validation Accuracy = 0.958
     
     EPOCH 81 ...
-    Train Accuracy = 0.998
-    Validation Accuracy = 0.953
+    Train Accuracy = 0.997
+    Validation Accuracy = 0.956
     
     EPOCH 82 ...
-    Train Accuracy = 0.998
-    Validation Accuracy = 0.953
+    Train Accuracy = 0.996
+    Validation Accuracy = 0.960
     
     EPOCH 83 ...
     Train Accuracy = 0.997
-    Validation Accuracy = 0.949
+    Validation Accuracy = 0.956
     
     EPOCH 84 ...
     Train Accuracy = 0.997
-    Validation Accuracy = 0.955
+    Validation Accuracy = 0.964
     
     EPOCH 85 ...
-    Train Accuracy = 0.996
-    Validation Accuracy = 0.951
+    Train Accuracy = 0.998
+    Validation Accuracy = 0.961
     
     EPOCH 86 ...
-    Train Accuracy = 0.997
-    Validation Accuracy = 0.951
+    Train Accuracy = 0.998
+    Validation Accuracy = 0.959
     
     EPOCH 87 ...
     Train Accuracy = 0.998
-    Validation Accuracy = 0.948
+    Validation Accuracy = 0.962
     
     EPOCH 88 ...
-    Train Accuracy = 0.998
-    Validation Accuracy = 0.953
+    Train Accuracy = 0.997
+    Validation Accuracy = 0.958
     
     EPOCH 89 ...
-    Train Accuracy = 0.998
-    Validation Accuracy = 0.954
+    Train Accuracy = 0.997
+    Validation Accuracy = 0.963
     
     EPOCH 90 ...
     Train Accuracy = 0.998
-    Validation Accuracy = 0.954
+    Validation Accuracy = 0.959
     
     EPOCH 91 ...
-    Train Accuracy = 0.996
-    Validation Accuracy = 0.949
+    Train Accuracy = 0.998
+    Validation Accuracy = 0.956
     
     EPOCH 92 ...
     Train Accuracy = 0.998
-    Validation Accuracy = 0.950
+    Validation Accuracy = 0.965
     
     EPOCH 93 ...
     Train Accuracy = 0.998
-    Validation Accuracy = 0.949
+    Validation Accuracy = 0.961
     
     EPOCH 94 ...
     Train Accuracy = 0.998
-    Validation Accuracy = 0.958
+    Validation Accuracy = 0.959
     
     EPOCH 95 ...
-    Train Accuracy = 0.999
+    Train Accuracy = 0.997
     Validation Accuracy = 0.960
     
     EPOCH 96 ...
-    Train Accuracy = 0.999
-    Validation Accuracy = 0.954
+    Train Accuracy = 0.998
+    Validation Accuracy = 0.959
     
     EPOCH 97 ...
     Train Accuracy = 0.998
-    Validation Accuracy = 0.958
+    Validation Accuracy = 0.961
     
     EPOCH 98 ...
     Train Accuracy = 0.998
-    Validation Accuracy = 0.954
+    Validation Accuracy = 0.965
     
     EPOCH 99 ...
-    Train Accuracy = 0.999
-    Validation Accuracy = 0.959
+    Train Accuracy = 0.998
+    Validation Accuracy = 0.963
     
     EPOCH 100 ...
     Train Accuracy = 0.998
-    Validation Accuracy = 0.959
+    Validation Accuracy = 0.964
+    
+    Model saved
     
 ```python
 with tf.Session() as sess:
@@ -758,7 +760,7 @@ with tf.Session() as sess:
     print("Test Accuracy = {:.3f}".format(test_accuracy))    
 ```
 
-    Test Accuracy = 0.933
+    Test Accuracy = 0.938
 
 ### Test a Model on New Images
 
@@ -786,27 +788,65 @@ Here are the results of the prediction:
 | Slippery Road	        | Slippery Road					 				|
 | Bicycle crossing		| Children crossing      						|
 
+![png](./examples/predictionofwebimages.png)
 
-The model was able to correctly guess 5 of the 7 traffic signs, which gives an accuracy of 71.4%. This compares favorably to the accuracy on the test set of 93.3%
+The model was able to correctly guess 5 of the 7 traffic signs, which gives an accuracy of 71.4%. This compares favorably to the accuracy on the test set of 93.8%
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model is relatively sure that this is a stop sign (probability of 0.22), and the image does contain a stop sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| .22         			| Stop sign   									| 
+| .088     				| No entry 										|
+| .086					| Speed limit(80 km/h)							|
+| .053	      			| Turn left ahead					 		    |
+| .045				    | Traffic signals      							|
 
 
-For the second image ... 
+For the second image, the model is not sure that this is a speed limit 30 km/h(probability. The top five soft max probabilities were
 
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-#### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .10         			| General caution   							| 
+| .098     				| Speed limit(60 km/h)	 						|
+| .083					| Children Crossing							    |
+| .0755	      			| Go stright or right					 		|
+| .0431				    | Ahead only      							    |
+
+For the third image, the model is relatively sure that this is a priority road sign (probability of 0.44), and the image does contain a priority sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .44         			| priority road   							    | 
+| .11     				| Roundabout mandatory	 						|
+| .071					| Yield							                |
+| .034	      			| Aheady only					 		        |
+| .029				    | Keep right      							    |
+
+For the forth image, the model is relatively sure that this is a road work sign (probability of 0.44), and the image does contain a priority sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .21         			| Road work   							        | 
+| .062     				| Speed limit(80 km/h)	 						|
+| .059					| Speed limit(60 km/h)                          |
+| .029	      			| Beware of ice/snow					 		|
+| .018				    | Right of way at next intersection      		|
 
 
+For the fifth image, the model is relatively sure that this is a yiled sign (probability of 0.51), and the image does contain a priority sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| .51         			| Yield   							            | 
+| .19     				| Aheady only					 		        |
+| .098					| priority road                                 |
+| .062	      			| No passing for vehicles over 3.5 metric tons  |
+| .052				    | Turn left ahead					 		    |
+
+
+![png](./examples/top5.png)
