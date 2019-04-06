@@ -89,9 +89,9 @@ histogram_plot(y_valid, "Validation examples")
 histogram_plot(y_test, "Test examples")
 ```
 
-![png](Training_set.png)
-![png](Validation_set.png)
-![png](Test_set.png)
+![png](./examples/Training_set.png)
+![png](./examples/Validation_set.png)
+![png](./examples/Test_set.png)
 
 
 ```python
@@ -107,7 +107,7 @@ for i in range(n_classes*cols):
     plt.xlabel(signnames[y_train[index]])
     
 ```
-![png](Image_view.png)
+![png](./examples/Image_view.png)
 
 ### Design and Test a Model Architecture
 
@@ -135,9 +135,9 @@ def preprocessing(img):
 Here is an example of a traffic sign image before and after grayscaling.
 
 #### Before processing
-![png](before_processing.png)
+![png](./examples/before_processing.png)
 #### After processing
-![png](after_processing.png)
+![png](./examples/after_processing.png)
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
 
