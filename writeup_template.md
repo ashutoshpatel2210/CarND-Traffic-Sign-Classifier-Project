@@ -750,6 +750,15 @@ with tf.Session() as sess:
     Train Accuracy = 0.998
     Validation Accuracy = 0.959
     
+```python
+with tf.Session() as sess:
+    saver.restore(sess, tf.train.latest_checkpoint('.'))
+
+    test_accuracy = evaluate(Xtest, y_test)
+    print("Test Accuracy = {:.3f}".format(test_accuracy))    
+```
+
+    Test Accuracy = 0.933
 
 ### Test a Model on New Images
 
