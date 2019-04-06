@@ -764,12 +764,13 @@ with tf.Session() as sess:
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web:
+Here are German traffic signs that I found on the web:
+![png](./examples/NewImages.png)
 
-![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+Most of images are difficult to classify because of following reasons
+1. Some images are blurred( like stop sign, slippery road, bicycle road)
+2. Images are low in resolution, Most of dataset images given for training are high in resolution and cleared images.
 
-The first image might be difficult to classify because ...
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -778,13 +779,15 @@ Here are the results of the prediction:
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Stop Sign      		| Stop sign   									| 
-| U-turn     			| U-turn 										|
+| Speed limit(30 KM/h)  | General Caution 							    |
+| Priority Road         | Priority Road                                 |
+| Road Work             | Road Work                                     |
 | Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
+| Slippery Road	        | Slippery Road					 				|
+| Bicycle crossing		| Children crossing      						|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 5 of the 7 traffic signs, which gives an accuracy of 71.4%. This compares favorably to the accuracy on the test set of 93.3%
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
