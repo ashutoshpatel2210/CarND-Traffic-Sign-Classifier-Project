@@ -781,7 +781,7 @@ Here are the results of the prediction:
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Stop Sign      		| Stop sign   									| 
-| Speed limit(30 KM/h)  | General Caution 							    |
+| Speed limit(30 KM/h)  | Children crossing 							|
 | Priority Road         | Priority Road                                 |
 | Road Work             | Road Work                                     |
 | Yield					| Yield											|
