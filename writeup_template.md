@@ -121,16 +121,23 @@ def preprocessing(img):
     img = cv2.equalizeHist(img)
     img = img/255
     return img
+
+Xtrain = np.array(list(map(preprocessing, X_train)))
+Xvalid = np.array(list(map(preprocessing, X_valid)))
+Xtest = np.array(list(map(preprocessing, X_test)))
 ```
 
 #### 1. convert the images to grayscale 
-    Images are convered from RGB to grayscale for faster coversion of learning algorithm and less number of channels are required to processed.
+
+Images are convered from RGB to grayscale for faster coversion of learning algorithm and less number of channels are required to processed.
 
 #### 2. Histogram equalization
-    It increases the global contrast of images, especially when the usable data of the image is represented by close contrast values. The intensities are distributed better on the histogram after this process.
+
+It increases the global contrast of images, especially when the usable data of the image is represented by close contrast values. The intensities are distributed better on the histogram after this process.
     
 #### 3. Nomralization
-    It distributes all image values between 0.0 and 1.0. it is normalized between 0 and 1. 
+
+It distributes all image values between 0.0 and 1.0. it is normalized between 0 and 1. 
 
 Here is an example of a traffic sign image before and after grayscaling.
 
@@ -146,14 +153,22 @@ My final model consisted of the following layers:
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
+| Convolution 3x3     	| 1x1 stride, Valid padding, outputs 28x28x32 	|
 | RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
+| Max pooling	      	| 2x2 stride,  outputs 14x14x32 				|
+| Convolution 3x3	    | 1x1 stride, Valid padding, outputs 10x10x64   |
+| RELU					|												|
+| Max pooling    		| 2x2 stride,  outputs 5x5x64 				    |						
+| Convolution 3x3	    | 1x1 stride, Valid padding, outputs 3x3x128    |
+| RELU					|												|
+| Max pooling    		| 2x2 stride,  outputs 3x3x128 				    |						
+| Fully connected		| Input = 1152. Output = 500.        		    |
+| RELU					|												|
+| Fully connected		| Input = 500. Output = 84.        		        |
+| RELU					|												|
+| Fully connected		| Input = 84. Output = 43.        		        |
+| Softmax				|         									    |
+|
  
 
 
